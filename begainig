@@ -1,0 +1,27 @@
+
+//image
+
+
+CSF::createSection($prefix,array(
+	'title' => 'Section Image',
+	'fields' => array(
+		array(
+			'id' => 'sectionOneImg',
+			'type' => 'media',
+			'title'     => 'Image Select',
+		),
+	),
+));
+ 
+ 
+ 
+ index.php
+ 
+ 
+  <?php 
+$Jconfigs = get_option( 'jaza_consult');
+$imgConfig = $Jconfigs['sectionOneImg']
+
+?>
+
+<img src="<?php echo $imgConfig['url'];?>">
