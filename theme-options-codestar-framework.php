@@ -10,6 +10,7 @@ $prefix = '_coffee_html_options';
   //
   CSF::createOptions( $prefix, array(
     'menu_title' => 'All Fields demo',
+    'framework_title' => 'used By Jaza Group',
     'menu_slug'  => 'coffee-html',
     'menu_position' => 2,
   ) );
@@ -18,91 +19,6 @@ $prefix = '_coffee_html_options';
 //
 // Basic Fieldss
 //
-CSF::createSection( $prefix, array(
-  'id'    => 'basic_fields',
-  'title' => 'Basic Fields',
-  'icon'  => 'fas fa-plus-circle',
-) );
-
-//
-// Field: text
-//
-CSF::createSection( $prefix, array(
-  'parent'      => 'basic_fields',
-  'title'       => 'Text',
-  'icon'        => 'far fa-square',
-  'description' => 'Visit documentation for more details on this field: <a href="http://codestarframework.com/documentation/#/fields?id=text" target="_blank">Field: text</a>',
-  'fields'      => array(
-
-    array(
-      'id'    => 'opt-text-1',
-      'type'  => 'text',
-      'title' => 'Text',
-    ),
-
-    array(
-      'id'      => 'opt-text-2',
-      'type'    => 'text',
-      'title'   => 'Text with default',
-      'default' => 'This is default value bla bla bla',
-    ),
-
-    array(
-      'id'       => 'opt-text-3',
-      'type'     => 'text',
-      'title'    => 'Text field ingenuity',
-      'subtitle' => 'The field of subtitle text.',
-      'help'     => 'The field of help text.',
-      'before'   => '<p>The field of before text.</p>',
-      'after'    => '<p>The field of after text.</p>',
-    ),
-
-    array(
-      'id'          => 'opt-text-4',
-      'type'        => 'text',
-      'title'       => 'Text with placeholder',
-      'placeholder' => 'Typed something...'
-    ),
-
-    array(
-      'id'         => 'opt-text-5',
-      'type'       => 'text',
-      'title'      => 'Text readonly',
-      'attributes' => array(
-        'readonly' => 'readonly'
-      ),
-      'default'    => 'readonly text field, can not be changed'
-    ),
-
-    array(
-      'id'          => 'opt-text-6',
-      'type'        => 'text',
-      'title'       => 'Text with maxlength (5)',
-      'attributes'  => array(
-        'maxlength' => '5'
-      ),
-      'default'     => 'abc',
-    ),
-
-    array(
-      'id'         => 'opt-text-7',
-      'type'       => 'text',
-      'title'      => 'Text usign custom styles',
-      'attributes' => array(
-        'style'    => 'width: 100%; height: 40px; border-color: #93C054;'
-      ),
-    ),
-
-    array(
-      'id'    => 'opt-text-8',
-      'type'  => 'text',
-      'after' => '<p>It shows full width if there is no field of title.</p>',
-    ),
-
-  )
-) );
-
-
 
 //Example
 CSF::createSection($prefix,array(
@@ -113,42 +29,10 @@ CSF::createSection($prefix,array(
 
 
 
-// Background
-CSF::createSection($prefix,array(
-  'parent' => 'Example_Section',
-  'title' => __('Background','coffee-html'),
-  'fields' => array(
-    array(
-      'id'    => 'opt-background-1',
-      'type'  => 'background',
-      'title' => 'Background',
-    ),
-
-
-
-
-)
-));
-
-
-// backup
-CSF::createSection($prefix,array(
-  'parent' => 'Example_Section',
-  'title' => __('backup','coffee-html'),
-  'fields' => array(
-array(
-  'type' => 'backup',
-),
-
-
-
-)
-));
-
 // Border
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Border','coffee-html'),
+  'title' => __('Border Line-35','coffee-html'),
   'fields' => array(
 array(
   'id'     => 'opt-border-1',
@@ -161,32 +45,10 @@ array(
 ));
 
 
-// Button Set
-CSF::createSection($prefix,array(
-  'parent' => 'Example_Section',
-  'title' => __('Button Set','coffee-html'),
-  'fields' => array(
- array(
-  'id'         => 'opt-button-set-1',
-  'type'       => 'button_set',
-  'title'      => 'Button Set',
-  'options'    => array(
-    'enabled'  => 'Enabled',
-    'disabled' => 'Disabled',
-  ),
-  'default'    => 'enabled'
-),
-
-
-)
-));
-
-
-
 // Color
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Color','coffee-html'),
+  'title' => __('Color  Line-51','coffee-html'),
   'fields' => array(
     array(
   'id'    => 'opt-color-1',
@@ -197,12 +59,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
 // Color Group
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Color Group','coffee-html'),
+  'title' => __('Color Group Line-65','coffee-html'),
   'fields' => array(
     array(
   'id'        => 'opt-color-group-1',
@@ -225,7 +85,7 @@ CSF::createSection($prefix,array(
 // Date
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Date','coffee-html'),
+  'title' => __('Date  Line-88','coffee-html'),
   'fields' => array(
      array(
       'id'    => 'opt-date-1',
@@ -236,16 +96,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
-
-
-
-
 // Dimensions
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Dimensions(Width x height)','coffee-html'),
+  'title' => __('Dimensions(Width x height)  Line-102','coffee-html'),
   'fields' => array(
      array(
   'id'     => 'opt-dimensions-1',
@@ -260,7 +114,7 @@ CSF::createSection($prefix,array(
 // Fieldset
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Fieldset(text,color,S/W)','coffee-html'),
+  'title' => __('Fieldset(text,color,S/W) Line-117','coffee-html'),
   'fields' => array(
    array(
   'id'     => 'opt-fieldset-1',
@@ -292,12 +146,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
-// Gallery
+                                  // Gallery
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Gallery','coffee-html'),
+  'title' => __('Gallery Line-152','coffee-html'),
   'fields' => array(
      array(
     'id'    => 'opt-gallery-1',
@@ -306,13 +158,10 @@ CSF::createSection($prefix,array(
   ),
 )
 ));
-
-
-
-// Group
+                                                // Group
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Group','coffee-html'),
+  'title' => __('Group Line-164','coffee-html'),
   'fields' => array(
  array(
   'id'        => 'opt-group-1',
@@ -339,12 +188,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
-// Icon
+                                  // Icon
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Icon','coffee-html'),
+  'title' => __('Icon Line-194','coffee-html'),
   'fields' => array(
     array(
   'id'    => 'opt-icon-1',
@@ -354,14 +201,10 @@ CSF::createSection($prefix,array(
 
 )
 ));
-
-
-
-
-// Image Select
+                                  // Image Select
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Image Select','coffee-html'),
+  'title' => __('Image Select Line-207','coffee-html'),
   'fields' => array(
       array(
         'id'        => 'opt-image-select-1',
@@ -377,12 +220,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
-// Normal And Hover Color
+                                  // Normal And Hover Color
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Link Color / Normal And Hover Color','coffee-html'),
+  'title' => __('Link Color / Normal And Hover Color Line-226','coffee-html'),
   'fields' => array(
 array(
   'id'    => 'opt-link-color-1',
@@ -393,12 +234,10 @@ array(
 )
 ));
 
-
-
-// Map
+                                  // Map
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Map','coffee-html'),
+  'title' => __('Map Line-240','coffee-html'),
   'fields' => array(
 array(
   'id'    => 'opt-map-1',
@@ -410,10 +249,10 @@ array(
 ));
 
 
-// Media
+                                  // Media
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Media','coffee-html'),
+  'title' => __('Media Line-255','coffee-html'),
   'fields' => array(
  array(
   'id'    => 'opt-media-1',
@@ -426,10 +265,10 @@ CSF::createSection($prefix,array(
 ));
 
 
-// Number
+                                  // Number
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Number','coffee-html'),
+  'title' => __('Number Line-271','coffee-html'),
   'fields' => array(
  array(
   'id'    => 'opt-number-1',
@@ -439,14 +278,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
-
-
-// Palette
+                                  // Palette
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Palette/ Color Gorup','coffee-html'),
+  'title' => __('Palette/ Color Gorup Line-284','coffee-html'),
   'fields' => array(
   array(
   'id'      => 'opt-palette-1',
@@ -464,13 +299,10 @@ CSF::createSection($prefix,array(
 )
 ));
 
-
-
-
-// Radio
+                                  // Radio
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Radio','coffee-html'),
+  'title' => __('Radio Line-305','coffee-html'),
   'fields' => array(
   array(
   'id'         => 'opt-radio',
@@ -488,10 +320,10 @@ CSF::createSection($prefix,array(
 ));
 
 
-// select
+                                  // select
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('select','coffee-html'),
+  'title' => __('select Line-326','coffee-html'),
   'fields' => array(
     array(
   'id'          => 'opt-select-1',
@@ -510,10 +342,10 @@ CSF::createSection($prefix,array(
 )
 );
 
-// slider
+                                  // slider
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Slider Num Selector Slider','coffee-html'),
+  'title' => __('Slider Num Selector Slider Line-348','coffee-html'),
   'fields' => array(
     array(
        'id' => 'slider',
@@ -528,10 +360,10 @@ CSF::createSection($prefix,array(
 
 
 
-// sortable
+                                  // sortable
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Sortable/accordion','coffee-html'),
+  'title' => __('Sortable/accordion Line-366','coffee-html'),
   'fields' => array(
     array(
   'id'            => 'opt-accordion-1',
@@ -566,10 +398,10 @@ CSF::createSection($prefix,array(
   )
 )
 );
-// Sorter
+                                  // Sorter
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Sorter/ Moveable','coffee-html'),
+  'title' => __('Sorter/ Moveable Line-404','coffee-html'),
   'fields' => array(
    array(
   'id'           => 'opt-sorter-1',
@@ -592,10 +424,10 @@ CSF::createSection($prefix,array(
 )
 );
 
-// Spacing
+                                  // Spacing
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Spacing/ Padding/ margin','coffee-html'),
+  'title' => __('Spacing/ Padding/ margin Line-430','coffee-html'),
   'fields' => array(
  array(
   'id'    => 'opt-spacing-1',
@@ -608,10 +440,10 @@ CSF::createSection($prefix,array(
 );
 
 
-// spinner
+                                  // spinner
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Spinner/Number Selector','coffee-html'),
+  'title' => __('Spinner/Number Selector Line-446','coffee-html'),
   'fields' => array(
 array(
   'id'    => 'opt-spinner-1',
@@ -626,10 +458,10 @@ array(
 
 
 
-// switcher
+                                  // switcher
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('switcher/ Any Section On Off/ Like S/W','coffee-html'),
+  'title' => __('switcher/ Any Section On Off/ Like S/W Line-464','coffee-html'),
   'fields' => array(
 array(
   'id'    => 'opt-switcher-1',
@@ -642,10 +474,10 @@ array(
 );
 
 
-// Tabbed
+                                  // Tabbed
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Tabbed/ Tabs','coffee-html'),
+  'title' => __('Tabbed/ Tabs Line-480','coffee-html'),
   'fields' => array(
 array(
   'id'            => 'opt-tabbed-1',
@@ -681,10 +513,10 @@ array(
 )
 );
 
-// Typography
+                                  // Typography
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('Typography','coffee-html'),
+  'title' => __('Typography Line-519','coffee-html'),
   'fields' => array(
   array(
       'id'    => 'opt-typography-1',
@@ -699,7 +531,7 @@ CSF::createSection($prefix,array(
 // sanitize
 CSF::createSection($prefix,array(
   'parent' => 'Example_Section',
-  'title' => __('sanitize','coffee-html'),
+  'title' => __('sanitize Line-534','coffee-html'),
   'fields' => array(
   array(
   'id'       => 'opt-wp-editor-3',
@@ -711,3 +543,84 @@ CSF::createSection($prefix,array(
   )
 )
 );
+
+
+
+// Button Set
+CSF::createSection($prefix,array(
+  'parent' => 'Example_Section',
+  'title' => __('Button Set Line-552','coffee-html'),
+  'fields' => array(
+ array(
+  'id'         => 'opt-button-set-1',
+  'type'       => 'button_set',
+  'title'      => 'Button Set',
+  'options'    => array(
+    'enabled'  => 'Enabled',
+    'disabled' => 'Disabled',
+  ),
+  'default'    => 'enabled'
+),
+
+
+)
+));
+
+
+                                        // Background
+CSF::createSection($prefix,array(
+  'parent' => 'Example_Section',
+  'title' => __('Background Line-573','coffee-html'),
+  'fields' => array(
+    array(
+      'id'    => 'opt-background-1',
+      'type'  => 'background',
+      'title' => 'Background',
+    ),
+
+
+
+
+)
+));
+
+
+                                        // backup
+CSF::createSection($prefix,array(
+  'parent' => 'Example_Section',
+  'title' => __('backup Line-591','coffee-html'),
+  'fields' => array(
+array(
+  'type' => 'backup',
+),
+
+
+
+)
+));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSF::createSection( $prefix, array(
+  'id'    => 'basic_fields',
+  'title' => 'Basic Fields',
+  'icon'  => 'fas fa-plus-circle',
+) );
