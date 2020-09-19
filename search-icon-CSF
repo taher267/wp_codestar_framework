@@ -1,0 +1,17 @@
+
+
+
+
+
+
+
+
+<div class="gallery-top heading">
+				<?php	$coection=$ConFig['gallery_head_title_clor'];?>
+				
+				<?php if ($ConFig['gallery_head_title']): ?>
+					<h3 onmouseenter="this.style.color='<?php echo $coection['hover'];?>'" onmouseleave="this.style.color='<?php echo $coection['color'];?>'" style="color:<?php echo $coection['color'];?>; ">
+						<!-- Heading Title -->
+						 <?php echo $ConFig['gallery_head_title']; ?></h3>
+				<?php endif ?>
+			</div>
