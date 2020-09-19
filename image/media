@@ -20,7 +20,7 @@ CSF::createSection($prefix,array(
  
   <?php 
 $ConFig = get_option( 'jaza_consult');
-$imgConfig = $ConFig['sectionOneImg']
+$imgConfig = $ConFig['sectionOneImg'];
 
 ?>
 
